@@ -12,7 +12,7 @@ public:
 };
 
 // Derived class B from A
-class B : public A {
+class B :virtual public A {
 public:
     void sum() {
         cout << "\nAddition: " << a + b;
@@ -20,7 +20,7 @@ public:
 };
 
 // Derived class C from A
-class C : public A {
+class C :virtual public A {
 public:
     void sub() {
         cout << "\nSubtraction: " << a - b;
