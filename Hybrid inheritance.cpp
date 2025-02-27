@@ -32,9 +32,9 @@ class D : public B, public C {
 public:
     void displayResults() {
         // Display results from B and C
-        cout << "\nResults from class B and C:";
-        cout << "\nAddition: " << B::a + B::b; // Accessing a and b from B
-        cout << "\nSubtraction: " << C::a - C::b; // Accessing a and b from C
+       
+        cout << "\nAddition: " << a + b; // Accessing a and b from B
+        cout << "\nSubtraction: " << a - b; // Accessing a and b from C
     }
 };
 
@@ -42,9 +42,6 @@ int main() {
     D obj;
     obj.get(); 
     
-    // Call methods from B and C
-    obj.B::sum();
-    obj.C::sub(); 
     
     // Display results from both B and C
     obj.displayResults();
